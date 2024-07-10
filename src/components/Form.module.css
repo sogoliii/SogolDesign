@@ -1,0 +1,140 @@
+:root {
+  --blue: #0070ff;
+  --red: #f04a00;
+  --green: #03c03c;
+  --orange: #ffa500;
+}
+.form {
+  flex: 0 0 40%;
+}
+.formInputGroup {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+.formInputGroup1 {
+  color: var(--green);
+}
+.formInputGroup2 {
+  color: var(--orange);
+}
+.formInputGroup3 {
+  color: var(--blue);
+}
+.formInputGroup4 {
+  color: var(--red);
+}
+.formInputGroup1 label .FormLabelNumber {
+  border-color: var(--green);
+}
+.formInputGroup2 label .FormLabelNumber {
+  border-color: var(--orange);
+}
+.formInputGroup3 label .FormLabelNumber {
+  border-color: var(--blue);
+}
+.formInputGroup4 label .FormLabelNumber {
+  border-color: var(--red);
+}
+.formInputGroup1 input::placeholder {
+  color: var(--green);
+}
+.formInputGroup2 input::placeholder {
+  color: var(--orange);
+}
+.formInputGroup3 input::placeholder {
+  color: var(--blue);
+}
+.formInputGroup4 input::placeholder {
+  color: var(--red);
+}
+.formInputGroup label {
+  font-size: 1.8rem;
+}
+.FormLabelNumber {
+  margin-right: 2rem;
+  padding: 2px 10px;
+  border-radius: 1.5rem;
+  border: 3px solid;
+}
+.formInputGroup input {
+  width: 80%;
+  border: none;
+  border-bottom: 2px dashed;
+  display: block;
+  margin-left: 6rem;
+  margin-top: 1rem;
+  padding: 1rem 0;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
+
+.formInputGroup1 input {
+  border-color: var(--green);
+}
+
+.formInputGroup2 input {
+  border-color: var(--orange);
+}
+.formInputGroup3 input {
+  border-color: var(--blue);
+}
+.formInputGroup4 input {
+  border-color: var(--red);
+}
+.formInputGroup input:focus {
+  outline: none;
+}
+
+.form button {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #ffbf00;
+  padding: 1rem 2rem;
+  width: 15rem;
+  height: fit-content;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.5s;
+  border: 1px solid;
+  margin-top: 6rem;
+  margin-left: 6rem;
+}
+.form button:hover {
+  box-shadow: 3px 3px 0px 0px black;
+}
+
+@media (max-width: 900px) {
+  .form {
+    flex-basis: 85%;
+    flex-grow: 0.5;
+    display: flex;
+    flex-direction: column;
+  }
+  .formInputGroup label {
+    font-size: 1.5rem;
+  }
+  .formInputGroup input {
+    font-size: 1.5rem;
+  }
+  .form button {
+    font-size: 1.5rem;
+    align-self: center;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .formInputGroup label {
+    font-size: 1.2rem;
+  }
+  .formInputGroup input {
+    font-size: 1.2rem;
+  }
+  .form button {
+    width: 12rem;
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,21 @@
+.serviceCardsContainer {
+  width: fit-content;
+  background-color: #2a3439;
+  padding: 4rem 0;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: 400px 400px;
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 3rem;
+  justify-items: center;
+  border: 1px dotted black;
+  border-radius: 10px;
+  box-shadow: 10px 10px orangered;
+}
+
+@media (max-width: 1000px) {
+  .serviceCardsContainer {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

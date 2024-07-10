@@ -1,0 +1,63 @@
+.worksContainer {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 10rem;
+}
+.workCard {
+  display: block;
+  width: 25rem;
+  height: 25rem;
+  border: 1px dotted black;
+  box-shadow: 10px 10px black;
+  transition: all 1s;
+}
+.workCardRound {
+  border-radius: 50%;
+  box-shadow: -10px -10px black;
+}
+.workCardRound1 {
+  box-shadow: 10px 10px black;
+}
+
+.workCard img {
+  width: 100%;
+}
+.workCardRound img {
+  border-radius: 50%;
+}
+
+.workCard:hover {
+  transform: translateY(-20px);
+}
+@media (max-width: 1050px) {
+  .workCard {
+    width: 20rem;
+    height: 20rem;
+  }
+}
+@media (max-width: 850px) {
+  .worksContainer {
+    padding-top: 0;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+  }
+  .work {
+    margin-bottom: 5rem;
+  }
+  .work1 {
+    margin-bottom: 0;
+    margin-top: 3%;
+  }
+  .workCard {
+    width: 20rem;
+    height: 20rem;
+  }
+}
+
+@media (max-width: 1050px) {
+  .workCard {
+    width: 15rem;
+    height: 15rem;
+  }
+}

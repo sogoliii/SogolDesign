@@ -1,0 +1,44 @@
+.serviceDetail {
+  width: 25rem;
+  border: 1px dotted black;
+  background: #f7d6e0;
+  padding: 2rem;
+  position: relative;
+  /* transform: rotate(3deg); */
+}
+
+.serviceDetail h1 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.serviceDetail p {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+.serviceDetail a {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: black;
+  transition: all 0.5s;
+}
+
+.serviceDetail a:hover {
+  border-bottom: 1px dotted black;
+}
+
+@media (max-width: 500px) {
+  .serviceDetail {
+    width: 15rem;
+  }
+  .serviceDetail h1 {
+    font-size: 1.4rem;
+  }
+  .serviceDetail p {
+    font-size: 1.2rem;
+  }
+  .serviceDetail a {
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,41 @@
+.serviceList {
+  list-style-type: none;
+  font-size: 1.4rem;
+  width: fit-content;
+  padding: 3rem;
+  border: 1px dotted black;
+
+  background-color: #faf0ca;
+  position: relative;
+}
+
+.serviceItems {
+  display: flex;
+  align-items: center;
+}
+.serviceItems:not(:last-child) {
+  padding-bottom: 2rem;
+}
+
+.serviceItemIcon {
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  box-shadow: 2px 2px black;
+  margin-right: 1rem;
+}
+.serviceItemIcon img {
+  width: 100%;
+}
+
+@media (max-width: 500px) {
+  .serviceList {
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 3rem 2rem;
+  }
+  .serviceItemIcon {
+    width: 20px;
+    height: 20px;
+  }
+}
